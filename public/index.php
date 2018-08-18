@@ -49,6 +49,14 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
+/* Tratando COORS de maneira rapida */
+header("Access-Control-Allow-Headers: Content-Type");
+header('Content-type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Max-Age: 600');
+
+header("HTTP/1.1 200 OK");
+
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(

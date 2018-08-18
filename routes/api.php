@@ -14,6 +14,6 @@ use Illuminate\Http\Request;
 */
 
 Route::apiResource('pedidos', 'PedidosController');
-Route::get('pedidos/', 'PedidosController@getLista');
-Route::post('pedidos/', 'PedidosController@post');
-Route::delete('pedidos/', 'PedidosController@Lista');
+Route::get('pedidos', 'PedidosController@getLista');
+Route::post('pedidos', 'PedidosController@post');
+#Route::delete('pedidos', 'PedidosController@Lista');
